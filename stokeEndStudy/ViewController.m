@@ -39,8 +39,10 @@
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     animation.repeatCount = 10;
-    animation.duration = 5.0;
+    animation.duration = 2.0;
     animation.fromValue = @(0);
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+
     animation.toValue = @(2 * M_PI);
     [_layer addAnimation:animation forKey:nil];
     
