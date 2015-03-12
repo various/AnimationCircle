@@ -31,8 +31,10 @@
     [_layer addAnimation:animation forKey:nil];
 
     self.layer.frame = CGRectMake(100, 100, 200, 200);
-    //self.layer.backgroundColor = [UIColor blueColor].CGColor;
     
+    
+      //self.layer.backgroundColor = [UIColor blueColor].CGColor;
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
