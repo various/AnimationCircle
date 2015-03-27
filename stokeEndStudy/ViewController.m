@@ -21,8 +21,13 @@
     _layer.strokeColor = [UIColor redColor].CGColor;
     _layer.fillColor = [UIColor clearColor].CGColor;
     _layer.lineWidth = 2.0;
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(50, 50) radius:50 startAngle:0 endAngle:M_PI * 2 - 0.1 clockwise:YES];
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(50, 50) radius:40 startAngle:0 endAngle:M_PI * 2 - 0.1 clockwise:YES];
     _layer.path = path.CGPath;
+    _layer.contentsScale = [UIScreen mainScreen].scale;
+    _layer.lineCap = kCALineCapRound;
+    _layer.lineJoin = kCALineJoinBevel;
+    _layer.fillColor = [UIColor blackColor].CGColor;
+   // _layer.backgroundColor = [UIColor greenColor].CGColor;
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.duration = 2.0;
     animation.fromValue = [NSNumber numberWithFloat:0.0];
@@ -36,6 +41,7 @@
     CALayer *maskLayer = [CALayer layer];
     maskLayer.contents = (__bridge id)([UIImage imageNamed:@"angle-mask"].CGImage);
     maskLayer.frame = _layer.bounds;
+    
     _layer.mask = maskLayer;
     
       //self.layer.backgroundColor = [UIColor blueColor].CGColor;
@@ -48,7 +54,7 @@
     animation.repeatCount = 10;
     animation.duration = 2.0;
     animation.fromValue = @(0);
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
     animation.toValue = @(2 * M_PI);
     [_layer addAnimation:animation forKey:nil];
