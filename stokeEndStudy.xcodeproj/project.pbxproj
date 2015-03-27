@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5D1A131AC5073D0028536F /* angle-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D1A101AC5073D0028536F /* angle-mask.png */; };
+		7F5D1A141AC5073D0028536F /* angle-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D1A111AC5073D0028536F /* angle-mask@2x.png */; };
+		7F5D1A151AC5073D0028536F /* angle-mask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D1A121AC5073D0028536F /* angle-mask@3x.png */; };
 		7FFA13FD1AA5E1C90088AF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA13FC1AA5E1C90088AF43 /* main.m */; };
 		7FFA14001AA5E1C90088AF43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA13FF1AA5E1C90088AF43 /* AppDelegate.m */; };
 		7FFA14031AA5E1CA0088AF43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA14021AA5E1CA0088AF43 /* ViewController.m */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5D1A101AC5073D0028536F /* angle-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angle-mask.png"; sourceTree = "<group>"; };
+		7F5D1A111AC5073D0028536F /* angle-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angle-mask@2x.png"; sourceTree = "<group>"; };
+		7F5D1A121AC5073D0028536F /* angle-mask@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angle-mask@3x.png"; sourceTree = "<group>"; };
 		7FFA13F71AA5E1C90088AF43 /* stokeEndStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stokeEndStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFA13FB1AA5E1C90088AF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FFA13FC1AA5E1C90088AF43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 		7FFA13EE1AA5E1C90088AF43 = {
 			isa = PBXGroup;
 			children = (
+				7F5D1A101AC5073D0028536F /* angle-mask.png */,
+				7F5D1A111AC5073D0028536F /* angle-mask@2x.png */,
+				7F5D1A121AC5073D0028536F /* angle-mask@3x.png */,
 				7FFA13F91AA5E1C90088AF43 /* stokeEndStudy */,
 				7FFA14131AA5E1CA0088AF43 /* stokeEndStudyTests */,
 				7FFA13F81AA5E1C90088AF43 /* Products */,
@@ -199,9 +208,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5D1A141AC5073D0028536F /* angle-mask@2x.png in Resources */,
 				7FFA14061AA5E1CA0088AF43 /* Main.storyboard in Resources */,
+				7F5D1A131AC5073D0028536F /* angle-mask.png in Resources */,
 				7FFA140B1AA5E1CA0088AF43 /* LaunchScreen.xib in Resources */,
 				7FFA14081AA5E1CA0088AF43 /* Images.xcassets in Resources */,
+				7F5D1A151AC5073D0028536F /* angle-mask@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				7FFA141C1AA5E1CA0088AF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FFA141D1AA5E1CA0088AF43 /* Build configuration list for PBXNativeTarget "stokeEndStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				7FFA141F1AA5E1CA0088AF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

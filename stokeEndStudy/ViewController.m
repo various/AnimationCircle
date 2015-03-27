@@ -21,7 +21,7 @@
     _layer.strokeColor = [UIColor redColor].CGColor;
     _layer.fillColor = [UIColor clearColor].CGColor;
     _layer.lineWidth = 2.0;
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(100, 100) radius:100 startAngle:0 endAngle:M_PI * 2 - 0.1 clockwise:YES];
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(50, 50) radius:50 startAngle:0 endAngle:M_PI * 2 - 0.1 clockwise:YES];
     _layer.path = path.CGPath;
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.duration = 2.0;
@@ -30,8 +30,13 @@
     animation.delegate = self;
     [_layer addAnimation:animation forKey:nil];
 
-    self.layer.frame = CGRectMake(100, 100, 200, 200);
+    self.layer.frame = CGRectMake(100, 100, 100, 100);
+    //self.layer.backgroundColor = [UIColor greenColor].CGColor;
     
+    CALayer *maskLayer = [CALayer layer];
+    maskLayer.contents = (__bridge id)([UIImage imageNamed:@"angle-mask"].CGImage);
+    maskLayer.frame = _layer.bounds;
+    _layer.mask = maskLayer;
     
       //self.layer.backgroundColor = [UIColor blueColor].CGColor;
 
